@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<metainfo>
+    <schemaVersion>2.0</schemaVersion>
+    <services>
+        <service>
+            <name>Tomcat</name>
+            <displayName>Tomcat</displayName>
+            <comment>Tomcat application server</comment>
+            <version>${tomcat.version}</version>
+            <components>
+                <component>
+                    <name>tomcat</name>
+                    <displayName>Tomcat Master Component</displayName>
+                    <category>MASTER</category>
+                    <cardinality>1</cardinality>
+                    <commandScript>
+                        <script>scripts/master.py</script>
+                        <scriptType>PYTHON</scriptType>
+                        <timeout>10000</timeout>
+                    </commandScript>
+                </component>
+            </components>
+            <configuration-dependencies>
+                <config-type>common-env</config-type>
+            </configuration-dependencies>
+        </service>
+    </services>
+</metainfo>

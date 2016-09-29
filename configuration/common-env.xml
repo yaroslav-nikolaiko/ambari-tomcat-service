@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+ 
+<configuration>
+  <property>
+    <name>user</name>
+    <value>bigdata</value>
+    <description>Tomcat App User Name.</description>
+  </property>
+    <property>
+        <name>group</name>
+        <value>bigdata</value>
+        <description>Tomcat App User Group Name.</description>
+    </property>
+  <property>
+    <name>catalina_home</name>
+    <value>/home/bigdata/ironslav/tomcat</value>
+    <description>Tomcat Home path</description>
+  </property>
+</configuration>
